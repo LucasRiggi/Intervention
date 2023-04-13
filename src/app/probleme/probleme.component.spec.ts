@@ -37,4 +37,11 @@ describe('ProblemeComponent', () => {
     expect(errors['minlength']).toBeFalsy();
   });
 
+  it('Zone PRÉNOM valide avec 200 caractères', () => {
+    let zone = component.problemeForm?.controls['prenom']
+    zone?.setValue('a'.repeat(200))
+    let errors = zone?.errors || {};
+    expect(errors['minlength']).toBeFalsy();
+  });
+
 });
