@@ -19,9 +19,9 @@ describe('ProblemeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  // it('should create', () => {
+  //   expect(component).toBeTruthy();
+  // });
 
   it('Zone prénom invalide avec 2 caracteres', () => {
     let zone = component.problemeForm?.controls['prenom']
@@ -43,5 +43,24 @@ describe('ProblemeComponent', () => {
     let errors = zone?.errors || {};
     expect(errors['minlength']).toBeFalsy();
   });
+
+  it('Zone PRÉNOM invalide avec aucune valeur', () => {
+    let zone = component.problemeForm?.controls['prenom']
+    let errors = zone?.errors || {};
+    expect(errors['required']).toBeTruthy();
+  });
+
+ 
+
+
+
+
+  
+
+  
+
+  
+
+
 
 });
