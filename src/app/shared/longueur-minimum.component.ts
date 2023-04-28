@@ -1,4 +1,4 @@
-import { AbstractControl, ValidatorFn } from "@angular/forms";
+import { ValidatorFn, AbstractControl } from "@angular/forms";
 
 export class VerifierCaracteresValidator {
 

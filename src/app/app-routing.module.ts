@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AcceuilComponent} from './acceuil/acceuil.component';
-import { ProblemeComponent} from './probleme/probleme.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { ProblemeComponent } from './probleme/probleme.component';
 
 const routes: Routes = [
-  { path:'accueil', component:AcceuilComponent},
-  { path:'probleme', component:ProblemeComponent},    
-  { path:'', redirectTo:'accueil', pathMatch:'full'},
-  { path:'**', redirectTo:'accueil', pathMatch:'full'}
+  {path:'acceuil',component:AccueilComponent},
+  {path:'probleme',component:ProblemeComponent},
+  {path:'',redirectTo:'acceuil',pathMatch:'full'},
+  {path:'**',redirectTo:'acceuil',pathMatch:'full'}, // si la route est inexistante rediriger l'user
 ];
 
 @NgModule({
