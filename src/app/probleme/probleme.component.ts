@@ -45,13 +45,15 @@ telephone: [{value: '', disabled: true}],
          
 
     ControlCouriel.clearValidators();
-    ControlCouriel.reset();  // Pour enlever les messages d'erreur si le controle contenait des données invaldides
+    ControlCouriel.reset(); 
     ControlCouriel.disable();  
 
     ControlCourielConfirmation.clearValidators();
     ControlCourielConfirmation.reset();    
     ControlCourielConfirmation.disable();
   }
+
+
 
   save(): void {
   }
